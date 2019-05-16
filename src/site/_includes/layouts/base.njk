@@ -9,23 +9,24 @@
   <body class="{{ bodyClass }}" >
     <div class="container">
       <header>
+        <img src="/images/logo.png">
         <ul class="nav">
           <li>
-            <a href="/">home<small>where the heart is</small></a>
+            <a href="/">home</a>
           </li>
           <li>
-            <a href="/about">about<small>all about this</small></a>
+            <a href="/pricing">pricing</a>
+          </li>
+		  <li>
+            <a href="/contact">contact</a>
           </li>
         </ul>
-        <h1>{{ title }}</h1>
-        {%- if subtitle %}<p class="subtitle">{{ subtitle }}</p>{% endif %}
       </header>
+	  <h1>{{ title }}</h1>
+	  {%- if subtitle %}<p class="subtitle">{{ subtitle }}</p>{% endif %}
       {{ content | safe }}
       {% include "footer.njk" %}
       <script>{% include "js/scripts.js" %}</script>
     </div>
   </body>
 </html>
-
-
-

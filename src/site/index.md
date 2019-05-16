@@ -1,25 +1,24 @@
 ---
-title: EleventyOne
-subtitle: A project scaffold for getting building with Eleventy quickly.
+title: Cedar City's Best Choice.
+subtitle: Aspen Web Development can help you grow your business with a strong web presence and identity.
 layout: layouts/base.njk
 ---
 
 
-## This site is a starting point
+## Your new favorite web design business in Southern Utah is now up and running.
 
-From this point we should already have:
+What we offer:
 
-- [Eleventy](https://11ty.io) with a skeleton site
-- A date format filter for Nunjucks
-- A tiny inline Sass pipeline
-- A tiny inline JS pipeline. (<a href="#" class="btn-log">Test a console.log message</a>)
-- JS [search index](/search.json) generator
-- Serverless (FaaS) development pipeline with Netlify Functions for Lambda
+- Web Page Design
+- Web Application Development
+- Logo design
+- Print Design
+- Other related services as requested
 
 
-## Post pages
+## Portfolio
 
-The pages found in in the posts
+Example work done for previous clients:
 
 <ul class="listing">
 {%- for page in collections.post -%}
@@ -29,31 +28,3 @@ The pages found in in the posts
   </li>
 {%- endfor -%}
 </ul>
-
-## Links from an external data source
-
-These links were sourced from [hawksworx.com](https://www.hawksworx.com/feed.json) at build time.
-
-<ul class="listing">
-{%- for item in hawksworx.entries.slice(0,5) -%}
-  <li>
-    <a href="{{ item.link }}">{{ item.title }}</a>
-  </li>
-{%- endfor -%}
-</ul>
-
-
-The data can be stashed locally by running:
-
-```
-yarn run seed
-```
-
-It will then be available locally for building with:
-
-```
-yarn start
-```
-
-
-
