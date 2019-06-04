@@ -9,3 +9,8 @@
     @media #{$bp-wide}  { @content; }
   }
 }
+
+@mixin background-opacity($color, $opacity: 0.3) {
+  background: $color; /*the fallback*/
+  background: rgba($color, $opacity);
+}

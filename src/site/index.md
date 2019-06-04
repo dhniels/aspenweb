@@ -20,11 +20,15 @@ What we offer:
 
 Example work done for previous clients:
 
-<ul class="listing">
+<ul class="auto-grid">
 {%- for page in collections.post -%}
-  <li>
-    <a href="{{ page.url }}">{{ page.data.title }}</a> -
-    <time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLL d, y") }}</time>
-  </li>
+  <a href="{{page.url}}" class="hidden-href">
+    <li style="background-image: url('{{ page.data.thumb }}')">
+      <div class="overlay">
+        <time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLL d, y") }}</time>
+        <span>{{ page.data.title }}</span>
+      </div>
+    </li>
+  </a>
 {%- endfor -%}
 </ul>
