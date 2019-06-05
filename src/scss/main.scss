@@ -2,50 +2,49 @@
 @import '_mixins';
 
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 ::-moz-selection {
-  background-color: $text-color;
-  color: $page-color;
+	background-color: $text-color;
+	color: $page-color;
 }
 ::selection {
-  background-color: $text-color;
-  color: $page-color;
+	background-color: $text-color;
+	color: $page-color;
 }
 
 html {
-  background-color: $main-color;
+	background-color: $main-color;
 }
 
 body {
-  text-align: center;
-  background-color: $page-color;
-  color: mix($text-color, $page-color, 80%);
-  font-family: sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.8;
-  min-height: 100vh;
-  background-image: url('/images/bg-grid.png');
-  @include bp(mid) {
-    font-size: 18px;
-  }
+	text-align: center;
+	background-color: $page-color;
+	color: mix($text-color, $page-color, 80%);
+	font-family: sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.8;
+	min-height: 100vh;
+	background-image: url('/images/bg-grid.png');
+	@include bp(mid) {
+		font-size: 18px;
+	}
 }
 
-
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  text-align: left;
-  @include bp(mid) {
-    width: 600px;
-  }
-  @include bp(wide) {
-    width: 700px;
-  }
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	text-align: left;
+	@include bp(mid) {
+		width: 600px;
+	}
+	@include bp(wide) {
+		width: 700px;
+	}
 }
 
 header {
@@ -56,125 +55,121 @@ header {
 
 
 h1, h2, h3 {
-  color: $text-color;
-  font-weight: 600;
-  margin-top: 2em;
-  margin-bottom:0.2em;
-  line-height: 1;
+	color: $text-color;
+	font-weight: 600;
+	margin-top: 2em;
+	margin-bottom:0.2em;
+	line-height: 1;
 }
 h1 {
-  font-size: 3em;
-  margin-top:0.4em;
-  margin-bottom:0.2em;
-  line-height: 1;
-  color: darken($main-color, 1%);
-
-  @include bp(mid) {
-    font-size: 5em;
-  }
-  @include bp(wide) {
-    font-size: 6em;
-  }
+	font-size: 3em;
+	margin-top:0.4em;
+	margin-bottom:0.2em;
+	line-height: 1;
+	color: darken($main-color, 1%);
+	@include bp(mid) {
+		font-size: 5em;
+	}
+	@include bp(wide) {
+		font-size: 6em;
+	}
 }
 
 p {
-  margin-top: 1em;
-  margin-bottom: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 .subtitle {
-  font-size: 1.2em;
-  margin-top: 1em;
-  margin-bottom: 5em;
+	font-size: 1.2em;
+	margin-top: 1em;
+	margin-bottom: 5em;
 }
 
 ul, ol {
-  padding-left: 1em;
+	padding-left: 1em;
 }
 
 a:link,
 a:visited {
-  color: $text-color;
-  text-decoration: none;
-  border-bottom: solid 1px mix($text-color, $page-color, 10%);
+	color: $text-color;
+	text-decoration: none;
+	border-bottom: solid 1px mix($text-color, $page-color, 10%);
 }
 a:hover,
 a:focus {
-  color: $text-color;
-  border-bottom: solid 1px $text-color;
+	color: $text-color;
+	border-bottom: solid 1px $text-color;
 }
 
 
 .nav {
-  padding-top: 3em;
-
-  li {
-    display: inline;
-  }
-
-  a:link,
-  a:visited {
-    display: inline-block;
-    border-bottom: solid 4px transparent;
-    border-top-style: none;
-    padding: 0.25em;
-    margin-left: 0;
-    margin-right: 0.7em;
-    text-align: left;
-    color: mix($text-color,$page-color, 80%);
-    text-decoration: none;
-  }
-  a:hover,
-  a:focus {
-      color: $text-color;
-      border-bottom: solid 4px $main-color;
-      border-top-style: none;
-  }
+	padding-top: 3em;
+	li {
+		display: inline;
+	}
+	a:link,
+	a:visited {
+		display: inline-block;
+		border-bottom: solid 4px transparent;
+		border-top-style: none;
+		padding: 0.25em;
+		margin-left: 0;
+		margin-right: 0.7em;
+		text-align: left;
+		color: mix($text-color,$page-color, 80%);
+		text-decoration: none;
+	}
+	a:hover,
+	a:focus {
+		color: $text-color;
+		border-bottom: solid 4px $main-color;
+		border-top-style: none;
+	}
 }
 
 .hidden-href {
-  border-bottom: none !important;
+	border-bottom: none !important;
 }
 
-
 code {
-  font-size: 0.8em;
-  background-color:  mix($main-color, $page-color, 20%);
-  color: $text-color;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 6px;
-  padding-right: 6px;
-  white-space: nowrap;
+	font-size: 0.8em;
+	background-color:  mix($main-color, $page-color, 20%);
+	color: $text-color;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 6px;
+	padding-right: 6px;
+	white-space: nowrap;
 }
 
 .date {
-  font-size: 0.8em;
-  font-style: italic;
+	font-size: 0.8em;
+	font-style: italic;
 }
 
 main {
-  margin-top: 4em;
+	margin-top: 4em;
 }
 
 pre {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 2em;
-  padding-right: 2em;
-  line-height: 1.2;
-  background-color:  mix($main-color, $page-color, 10%);
-  border: solid 1px mix($main-color, $page-color, 30%);
-  overflow: auto;
-  code {
-    border-style: none;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	line-height: 1.2;
+	background-color:  mix($main-color, $page-color, 10%);
+	border: solid 1px mix($main-color, $page-color, 30%);
+	overflow: auto;
+	code {
+		border-style: none;
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 
@@ -182,7 +177,6 @@ form {
 	label {
 		display: block;
 	}
-
 	input, textarea {
 		padding: 5px 10px;
 		margin-bottom: 12px;
@@ -190,22 +184,18 @@ form {
 		background: transparent;
 		border: 2px solid $main-color;
 		color: mix($text-color, $page-color, 80%);
-
 		&:focus {
 			outline-color: $main-color;
 		}
-
 		&::placeholder {
 			color: mix($text-color, $page-color, 80%);
 			opacity: 1;
 		}
 	}
-
 	textarea {
 		width: 80%;
 		height: 200px;
 	}
-
 	button {
 		padding: 10px 30px;
 		background: transparent;
@@ -214,7 +204,6 @@ form {
 		text-transform: uppercase;
 		font-size: 14px;
 		cursor: pointer;
-
 		&:hover {
 			background: $main-color;
 			color: $page-color;
@@ -223,55 +212,68 @@ form {
 }
 
 .auto-grid {
-  --auto-grid-min-size: 16rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-  grid-gap: 1rem;
-  padding-left: 0;
-
-  li {
-    padding: 5rem 1rem;
-    text-align: center;
-    font-size: 1.2rem;
-    background: $main-color;
-    background-size: cover;
-    color: #fff;
-    position: relative;
-    overflow-y: hidden;
-  }
-
-  li:hover .overlay {
-    top: 0;
-    transition: 0.3s;
-  }
+	--auto-grid-min-size: 16rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+	grid-gap: 1rem;
+	padding-left: 0;
+	li {
+		padding: 5rem 1rem;
+		text-align: center;
+		font-size: 1.2rem;
+		background: $main-color;
+		background-size: cover;
+		color: #fff;
+		position: relative;
+		overflow-y: hidden;
+	}
+	li:hover {
+		outline: 2px solid $main-color;
+	}
+	li:hover .overlay,
+	li:focus .overlay {
+		top: 0;
+		transition: 0.3s;
+	}
 }
 
 .overlay {
-  padding: 0.6rem;
-  background-color: rgba($main-color, 0.9);
-  position: absolute;
-  top: -100px; left: 0; right: 0;
-
-  time {display: block; font-size: 0.7em;}
-  span {font-weight: bold;}
+	padding: 0.6rem;
+	background-color: rgba($main-color, 0.9);
+	position: absolute;
+	top: -100px; left: 0; right: 0;
+	time {
+		display: block;
+		font-size: 0.7em;
+	}
+	span {
+		font-weight: bold;
+	}
 }
 
 footer {
-  margin-top: 6em;
-  padding-top: 4em;
-  padding-bottom: 6em;
-  border-top: solid 1px mix($text-color, $page-color, 10%);
-  font-size: 0.7em;
-  color: mix($text-color, $page-color, 40%);
+	margin-top: 6em;
+	padding-top: 4em;
+	padding-bottom: 6em;
+	border-top: solid 1px mix($text-color, $page-color, 10%);
+	font-size: 0.7em;
+	color: mix($text-color, $page-color, 40%);
+	a:link,
+	a:visited {
+		color: mix($text-color, $page-color, 70%);
+		border-bottom: solid 1px mix($main-color, $page-color, 70%);
+	}
+	a:hover,
+	a:focus {
+		color: $main-color;
+		border-bottom: solid 1px $text-color;
+	}
+}
 
-  a:link,
-  a:visited {
-    color: mix($text-color, $page-color, 70%);
-    border-bottom: solid 1px mix($main-color, $page-color, 70%);
-  }
-  a:hover,
-  a:focus {
-    color: $main-color;
-    border-bottom: solid 1px $text-color;
-  }
+@media only screen and (max-width: 400px) {
+	.nav li { display: block; }
+}
+@media (hover: none) {
+	.overlay { top: 0; }
+	.auto-grid li { outline: 2px solid $main-color; }
 }
