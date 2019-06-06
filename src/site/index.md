@@ -21,7 +21,7 @@ What we offer:
 Example work done for previous clients:
 
 <ul class="auto-grid">
-{%- for page in collections.post -%}
+{%- for page in collections.post | reverse -%}
   <a href="{{page.url}}" class="hidden-href">
     <li style="background-image: url('{{ page.data.thumb }}')">
       <div class="overlay">
