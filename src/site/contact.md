@@ -7,7 +7,11 @@ subtitle: Purchase services, request a quote, or simply ask a question.
 
 ## About Us
 
-Aspen Web Development is currently operated solely by [Dave Nielsen](https://dhniels.com). I am currently based out of Cedar City, Utah, but can take work from anywhere in the world. My one-on-one personal service approach provides maximum value for those willing to pay for quality work doesn't have to be totally redone again in a year. I don't believe in low-grade freelance work that you end up spending a big fee up front and then being left cold turkey to manage it yourself moving forward. I love things with lasting value and aim to provide that for my clients as well. I want us both to have a mutually beneficial relationship that pays dividends even after the project is over.
+Aspen Web Development is currently operated solely by [Dave Nielsen](https://dhniels.com). I am based out of Cedar City, Utah, but can take work from anywhere in the world. My one-on-one, personalized approach provides maximum value.
+
+My philosophy is pay once for quality work that doesn't have to be redone again in a year. I don't believe in low-grade freelance work that you end up saving a few dollars, but are left in the cold moving forward once the work is delivered.
+
+I love things with lasting value and support and aim to provide that for my clients as well. I want us both to have a mutually beneficial relationship that pays dividends even after the project is over.
 
 ## Send A Message
 
